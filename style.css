@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Arvo&family=Josefin+Sans&family=PT+Sans:ital@0;1&family=Raleway:wght@500&family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+        body {
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        /* Navbar start */
+
+nav {
+    height: 10%;
+    width: 100%;
+  }
+  .navbar {
+    background: #a3acdb;
+    height: 20%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 1%;
+
+  }
+  
+  /* .contact-btn {
+    padding: 1%;
+    background: #fc8dba;
+    border-radius: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 110px;
+  } */
+  
+  .login-btn {
+    text-align: center;
+    background: #c527ff;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 120px;
+    border-radius: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+
+  }
+  
+  
+  
+  .nav-links {
+    width: 40%;
+    align-items: center;
+    padding: 1%;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: inline;
+    padding: 2.5%;
+    font-size: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .nav-links ul a li {
+    text-decoration: none;
+  } 
+  
+  .logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+        /* Navbar end */
+
+        /* Main sec start */
+
+        .main-sec{
+            
+            height: 90vh;
+            background: url(https://info.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/people-analytics-recruitment.jpg) no-repeat ;
+            background-size:100% 100%;
+            object-fit: cover;
+        }
+
+
+        .headers {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            margin-left: 5%;
+            font-family: 'Josefin Sans', sans-serif;
+
+        }
+
+        .headers h1{
+            margin-top: 6.6%;
+            font-size: 3.5rem;
+            font-weight: 1200;
+            background: linear-gradient(#000000, #3351a1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .headers h3{
+            font-size: 2.4rem;
+            margin-top: 3.4%;
+            /* font-weight: 600; */
+
+        }
+
+        .headers h5{
+            font-size: 1.5rem;
+            margin-top: 2.3%;
+            font-weight: 100;
+
+        }
+
+        .main-btn{
+            display: flex;
+            margin-left: 5%; 
+            margin-top: 1.5%;   
+        }
+
+        .sec1-btn {
+            text-align: center;
+            background: #c527ff;
+            color: white;
+            border: none;
+            height: 2.7em;
+            width: 11%;
+            border-radius: 7px;
+            margin: 2%;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1rem;
+
+          }
+
+          
+
+          .sec1-btn span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .sec1-btn span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .sec1-btn:hover span {
+            padding-right: 25px;
+          }
+          
+          .sec1-btn:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+
+
+        /* Main sec end*/
+
+        /* Sec 2 start */
+
+         .sec2 h1 {
+             font-size: 3rem;
+             text-align: center;
+             padding: 5%;
+             font-family: 'Josefin Sans', sans-serif;
+             text-shadow: 0px 2px 5px rgb(126, 182, 255);
+         }
+
+        .sec2-card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Josefin Sans', sans-serif;
+
+
+        }
+        .sec2-cards{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            padding: 3%;
+            margin: 1%;
+            width: 16%;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            box-shadow: 2px 4px 4px rgba(45, 42, 42, 0.1);
+            max-width: 100%;
+            transition: transform .3s;            
+        }
+
+        .sec2-cards:hover{
+            box-shadow: 5px 7px 8px rgba(45, 42, 42, 0.1);
+            transform: scale(1.1);
+           
+        }
+        .card-logo img{
+          margin-bottom: 75%;
+          margin-right:20%;          
+        }
+        .card-text {
+            margin-left: 7%;
+        }
+        .card-text h3{
+            font-size: 1.5rem;
+            margin-bottom: 15%;
+        }
+
+        .skill-carousel {
+            font-size: 3rem;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        
+
+
+
+
+        /* Sec 2 end */
+
+        /* Sec 3 start */
+
+        .sec3{
+          max-width: 100%;  
+        }
+
+        .slider{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            width: calc(250px * 16);
+            animation: scroll 60s linear infinite;
+            /* perspective: 100px; */
+            max-width: 100%;
+        }
+        @keyframes scroll{
+            0%{
+                transform: translateX();
+            }
+            100%{
+                transform: translateX(calc(-250px * 8));
+            }
+        }
+        .slide1 img{
+            height: 150px;
+            width: 150px;
+            margin-top: 120%;
+            transition: transform .2s;
+        }
+        .slide2 img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .slider1{
+            display: flex;
+
+        }
+
+        .silder1 .slider2 img{
+            box-shadow: 10px 10px lightblue;
+        }
+        .silder1 img:hover{
+            transform: scale(1.5);
+        }
+
+        /* Sec 3 end */
+
+
+
+
+        /* Candidate search start */
+
+       h2{
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 3%;
+
+
+       }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            flex: 1;
+        }
+
+        .search-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #1e3a8a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* max-width: 800px; */
+            width: 100%;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(100% / 5);
+            height: 150px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #dfeaf7;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 5px 0;
+            color: #1e3a8a;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+            color: #1e3a8a;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                max-height: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card-container {
+                max-width: 100%;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    
+         /* Candidate search end */
+
+       
+
+          
+         /* FOOTER START */
+
+footer {
+    background: #adb8f3;
+    color: white;
+    margin-top: 3%;
+
+  }
+  
+  .footer-contet-upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+  }
+  
+  .footer-left {
+    width: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .footer-left a{
+    font-size: 2rem;
+  }
+  
+  .footer-left h2 {
+    margin-bottom: 2%;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 30%;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .end {
+    margin: 2%;
+  }
+  
+  .footer-left ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: inline;
+    padding: 1.5%;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    width: 40%;
+  }
+  
+  .footer-left ul {
+    margin-top: 7%;
+  }
+  .icons {
+    color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 50%;
+    background: #c527ff;
+    margin: 10px;
+  }
+  
+  .footer-content-lower {
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  /* FOOTER END */
+  
+
+        @media only screen and (max-width: 1000px){
+  
+  .nav-links {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+    .footer-contet-upper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-left ul {
+    font-size: 0.6rem;
+    width: 370px;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+  }
+
+  .footer-content-lower {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lower-content {
+    padding: 10px;
+  }
+
+}
+
+/* LOGIN-PAGE START*/
+
+
