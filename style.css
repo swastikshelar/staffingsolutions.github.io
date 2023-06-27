@@ -255,7 +255,8 @@ nav {
         /* Sec 3 start */
 
         .sec3{
-          max-width: 100%;  
+          max-width: 100%; 
+          overflow-x: hidden;
         }
 
         .slider{
