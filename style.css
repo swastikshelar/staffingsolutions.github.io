@@ -213,6 +213,7 @@ nav {
             /* border: 1px solid black; */
             border-radius: 20px;
             padding: 3%;
+            width: 220px;
             margin: 1%;
             overflow: hidden;
             position: relative;
